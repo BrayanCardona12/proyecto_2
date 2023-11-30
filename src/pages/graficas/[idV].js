@@ -173,10 +173,10 @@ export default graficas
 
 graficas.getInitialProps = async (ctx) => {
 
-    const response1 = await axios.get(`http://localhost:3000/api/grafico/${ctx.query.idV}`);
-    const response2 = await axios.post(`http://localhost:3000/api/grafico/${ctx.query.idV}`);
-    const response3= await axios.put(`http://localhost:3000/api/grafico/${ctx.query.idV}`);
-    const response4 = await axios.patch(`http://localhost:3000/api/grafico/${ctx.query.idV}`);
+    const response1 = await axios.get(`https://proyecto-2-gamma.vercel.app/api/grafico/${ctx.query.idV}`);
+    const response2 = await axios.post(`https://proyecto-2-gamma.vercel.app/api/grafico/${ctx.query.idV}`);
+    const response3= await axios.put(`https://proyecto-2-gamma.vercel.app/api/grafico/${ctx.query.idV}`);
+    const response4 = await axios.patch(`https://proyecto-2-gamma.vercel.app/api/grafico/${ctx.query.idV}`);
 
     // const data1 = response1.data;
     // const data2 = response2.data;

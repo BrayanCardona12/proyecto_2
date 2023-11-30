@@ -1268,7 +1268,7 @@ export default pedidos
 
 pedidos.getInitialProps = async (ctx) => {
     try {
-        const response1 = await axios.get('http://localhost:3000/api/compra/?idC=' + ctx.query.idC);
+        const response1 = await axios.get('https://proyecto-2-gamma.vercel.app/api/compra/?idC=' + ctx.query.idC);
 
         return {
             data: response1.data

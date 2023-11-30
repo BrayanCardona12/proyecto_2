@@ -493,7 +493,7 @@ function actUser(props) {
 }
 
 actUser.getInitialProps = async (ctx) => {
-    const dd = await axios.get(`http://localhost:3000/api/Login/?id=` + ctx.query.id)
+    const dd = await axios.get(`https://proyecto-2-gamma.vercel.app/api/Login/?id=` + ctx.query.id)
 
     return {
         data: dd.data
